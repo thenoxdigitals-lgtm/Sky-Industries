@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Sky Industries | Contact</title>
+  <meta
+    name="description"
+    content="Contact Sky Industries for product inquiries, quotations, dealership discussions, and bulk supply requirements."
+  />
+  <meta
+    name="keywords"
+    content="Sky Industries contact, quotation, inquiry, dealership, bulk supply, electrical products"
+  />
+  <meta name="theme-color" content="#0b3d91" />
+
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="shortcut icon" href="logo.png" />
+  <link rel="apple-touch-icon" href="logo.png" />
+
+  <meta property="og:title" content="Sky Industries | Contact" />
+  <meta
+    property="og:description"
+    content="Get in touch with Sky Industries for product details, pricing, and business requirements."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="logo.png" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Sky Industries | Contact" />
+  <meta
+    name="twitter:description"
+    content="Reach out to Sky Industries for quotations, dealership support, and product inquiries."
+  />
+  <meta name="twitter:image" content="logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --bg: #f4f8fd;
+      --white: #ffffff;
+      --primary: #0b3d91;
+      --secondary: #1d72b8;
+      --accent: #e8f1fd;
+      --text: #1c2b45;
+      --muted: #5f718d;
+      --border: #d8e2f0;
+      --shadow: 0 12px 30px rgba(11, 61, 145, 0.08);
+      --radius: 18px;
+      --container: 1380px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Manrope", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(96%, var(--container));
+      margin: auto;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 22px;
+      border-radius: 999px;
+      font-weight: 700;
+      transition: 0.3s ease;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: #082c68;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border: 1.5px solid var(--primary);
+      color: var(--primary);
+      background: transparent;
+    }
+
+    .btn-outline:hover {
+      background: var(--primary);
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    .section-title {
+      font-size: 2rem;
+      line-height: 1.2;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    .section-text {
+      color: var(--muted);
+      max-width: 760px;
+      margin-bottom: 28px;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .navbar {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    .logo img {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+      border-radius: 12px;
+      background: white;
+      padding: 4px;
+      box-shadow: var(--shadow);
+    }
+
+    nav ul {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    nav ul li a {
+      font-weight: 600;
+      color: var(--text);
+      transition: 0.3s ease;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: var(--secondary);
+    }
+
+    .hero {
+      padding: 60px 0 45px;
+      background: linear-gradient(135deg, #eef5ff 0%, #f7fbff 100%);
+    }
+
+    .hero-wrap {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .hero-tag {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: #ddeafb;
+      color: var(--primary);
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 4vw, 4.2rem);
+      line-height: 1.06;
+      margin-bottom: 16px;
+      color: var(--primary);
+      max-width: 10ch;
+    }
+
+    .hero p {
+      color: var(--muted);
+      margin-bottom: 22px;
+      max-width: 720px;
+      font-size: 1rem;
+    }
+
+    .hero-btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+
+    .hero-points {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .hero-points span {
+      background: white;
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+
+    .hero-card {
+      background: linear-gradient(145deg, #0b3d91, #1d72b8);
+      color: white;
+      border-radius: 24px;
+      padding: 24px;
+      box-shadow: 0 22px 45px rgba(11, 61, 145, 0.18);
+    }
+
+    .hero-card h3 {
+      font-size: 1.45rem;
+      margin-bottom: 14px;
+    }
+
+    .hero-card p {
+      color: rgba(255,255,255,0.86);
+      margin-bottom: 18px;
+      font-size: 0.98rem;
+    }
+
+    .info-list {
+      list-style: none;
+      display: grid;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .info-list li {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 14px;
+      padding: 12px 14px;
+      font-size: 0.95rem;
+    }
+
+    section {
+      padding: 56px 0;
+    }
+
+    .light-section {
+      background: #eef5fc;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+      align-items: stretch;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow);
+      transition: 0.35s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 35px rgba(11, 61, 145, 0.12);
+    }
+
+    .card h3 {
+      color: var(--primary);
+      margin-bottom: 10px;
+      font-size: 1.18rem;
+    }
+
+    .card p {
+      color: var(--muted);
+    }
+
+    .icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: var(--accent);
+      color: var(--primary);
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+
+    .contact-box {
+      background: linear-gradient(135deg, #0c3f97, #145ea8);
+      color: white;
+      border-radius: 22px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+      height: 100%;
+    }
+
+    .contact-box h3 {
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+    }
+
+    .contact-box p {
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 14px;
+    }
+
+    .contact-box ul {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+    }
+
+    .contact-box ul li {
+      background: rgba(255,255,255,0.12);
+      padding: 11px 13px;
+      border-radius: 12px;
+    }
+
+    .contact-form {
+      display: grid;
+      gap: 16px;
+    }
+
+    .field {
+      display: grid;
+      gap: 8px;
+    }
+
+    .field label {
+      font-weight: 700;
+      color: var(--primary);
+      font-size: 0.96rem;
+    }
+
+    .field input,
+    .field textarea {
+      width: 100%;
+      padding: 14px 16px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      font-family: inherit;
+      font-size: 0.98rem;
+      outline: none;
+      background: #fff;
+      color: var(--text);
+      transition: 0.3s ease;
+    }
+
+    .field input:focus,
+    .field textarea:focus {
+      border-color: var(--secondary);
+      box-shadow: 0 0 0 4px rgba(29, 114, 184, 0.12);
+    }
+
+    .field textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+
+    .map-box {
+      min-height: 240px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #0b3d91, #1d72b8);
+      color: white;
+      padding: 24px;
+      display: flex;
+      align-items: end;
+      box-shadow: var(--shadow);
+    }
+
+    .map-box h3 {
+      margin-bottom: 10px;
+      font-size: 1.4rem;
+    }
+
+    .map-box p {
+      color: rgba(255,255,255,0.86);
+      max-width: 420px;
+    }
+
+    .note-box {
+      background: linear-gradient(135deg, #e7f1ff, #f8fbff);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .note-box h2 {
+      color: var(--primary);
+      font-size: 1.9rem;
+      margin-bottom: 10px;
+    }
+
+    .note-box p {
+      color: var(--muted);
+      margin-bottom: 18px;
+      max-width: 700px;
+    }
+
+    footer {
+      background: #0b2742;
+      color: rgba(255,255,255,0.84);
+      padding: 24px 0;
+    }
+
+    .footer-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-wrap p {
+      font-size: 0.94rem;
+    }
+
+    @media (max-width: 1100px) {
+      .hero-wrap,
+      .grid-2,
+      .grid-3 {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 992px) {
+      .navbar {
+        flex-direction: column;
+        justify-content: center;
+        padding: 14px 0;
+      }
+
+      nav ul {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .hero {
+        padding: 42px 0 30px;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .section-title,
+      .note-box h2 {
+        font-size: 1.65rem;
+      }
+
+      .btn {
+        width: 100%;
+        text-align: center;
+      }
+
+      .hero-btns {
+        flex-direction: column;
+      }
+
+      .card,
+      .hero-card,
+      .contact-box,
+      .note-box {
+        padding: 20px;
+      }
+
+      .logo img {
+        width: 42px;
+        height: 42px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="Sky Industries Logo" />
+        <span>Sky Industries</span>
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="infrastructure.html">Infrastructure</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-wrap">
+        <div>
+          <span class="hero-tag">Get In Touch</span>
+          <h1>Contact us for product enquiries and quotations.</h1>
+          <p>
+            Reach out to Sky Industries for pricing, dealership discussions,
+            product information, or bulk supply requirements related to our
+            electrical product categories.
+          </p>
+
+          <div class="hero-btns">
+            <a href="#contact-form" class="btn btn-primary">Send Enquiry</a>
+            <a href="products.html" class="btn btn-outline">View Products</a>
+          </div>
+
+          <div class="hero-points">
+            <span>Quotation requests</span>
+            <span>Dealer enquiries</span>
+            <span>Bulk supply support</span>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <h3>Business communication made simple</h3>
+          <p>
+            Use the contact form for product details, project requirements,
+            dealership interest, or supply-related discussions.
+          </p>
+
+          <ul class="info-list">
+            <li>Product inquiries and quotation requests.</li>
+            <li>Dealer and contractor communication support.</li>
+            <li>Business and project requirement discussions.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="section-title">Contact Information</h2>
+        <p class="section-text">
+          The current contact details below are based on the sample details shown in the original file
+          and should be replaced with official business information later.
+        </p>
+
+        <div class="grid-3">
+          <div class="card">
+            <div class="icon">01</div>
+            <h3>Phone</h3>
+            <p>+91 98765 43210</p>
+          </div>
+
+          <div class="card">
+            <div class="icon">02</div>
+            <h3>Email</h3>
+            <p>info@skyindustries.in</p>
+          </div>
+
+          <div class="card">
+            <div class="icon">03</div>
+            <h3>Location</h3>
+            <p>India</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="light-section" id="contact-form">
+      <div class="container grid-2">
+        <div class="card">
+          <h2 class="section-title">Send Your Enquiry</h2>
+          <p class="section-text">
+            Fill in your details and mention your product or supply requirement clearly.
+          </p>
+
+          <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you. Your enquiry has been recorded.');">
+            <div class="field">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+            </div>
+
+            <div class="field">
+              <label for="company">Company Name</label>
+              <input type="text" id="company" name="company" placeholder="Enter company name" />
+            </div>
+
+            <div class="field">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+            </div>
+
+            <div class="field">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" />
+            </div>
+
+            <div class="field">
+              <label for="message">Requirement</label>
+              <textarea id="message" name="message" placeholder="Tell us what products or quantities you need" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Inquiry</button>
+          </form>
+        </div>
+
+        <div class="contact-box">
+          <h3>What you can contact us for</h3>
+          <p>
+            We can discuss category details, product needs, business supply support,
+            and project-oriented requirements.
+          </p>
+          <ul>
+            <li>PVC casing-capping requirements.</li>
+            <li>Conduit pipe and routing product discussions.</li>
+            <li>Switches, modular plates, and accessory enquiries.</li>
+            <li>Bulk supply and dealership communication.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container grid-2">
+        <div class="map-box">
+          <div>
+            <h3>Location Map Placeholder</h3>
+            <p>
+              Add your exact office, factory, warehouse, or business location map here later.
+            </p>
+          </div>
+        </div>
+
+        <div class="note-box">
+          <h2>Important note</h2>
+          <p>
+            The phone number, email address, and location used on this page come from the sample details
+            shown in the original website file and should be updated with your official contact information.
+          </p>
+          <a href="index.html" class="btn btn-primary">Back to Home</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <p>© 2026 Sky Industries. All rights reserved.</p>
+      <p>Contact us for quotations, dealership support, and product enquiries.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

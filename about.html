@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Sky Industries | About Us</title>
+  <meta
+    name="description"
+    content="Learn about Sky Industries, a trusted electrical products manufacturer and supplier focused on quality, durability, modern design, and dependable business supply."
+  />
+  <meta
+    name="keywords"
+    content="Sky Industries about, electrical products manufacturer, PVC casing capping, conduit pipes, switches, modular plates, wiring accessories"
+  />
+  <meta name="theme-color" content="#0b3d91" />
+
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="shortcut icon" href="logo.png" />
+  <link rel="apple-touch-icon" href="logo.png" />
+
+  <meta property="og:title" content="Sky Industries | About Us" />
+  <meta
+    property="og:description"
+    content="Know more about Sky Industries, its mission, vision, values, and commitment to dependable electrical products."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="logo.png" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Sky Industries | About Us" />
+  <meta
+    name="twitter:description"
+    content="Trusted electrical products manufacturer and supplier focused on quality, durability, and supply support."
+  />
+  <meta name="twitter:image" content="logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --bg: #f4f8fd;
+      --white: #ffffff;
+      --primary: #0b3d91;
+      --secondary: #1d72b8;
+      --accent: #e8f1fd;
+      --text: #1c2b45;
+      --muted: #5f718d;
+      --border: #d8e2f0;
+      --shadow: 0 12px 30px rgba(11, 61, 145, 0.08);
+      --radius: 18px;
+      --container: 1380px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Manrope", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(96%, var(--container));
+      margin: auto;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 22px;
+      border-radius: 999px;
+      font-weight: 700;
+      transition: 0.3s ease;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: #082c68;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border: 1.5px solid var(--primary);
+      color: var(--primary);
+      background: transparent;
+    }
+
+    .btn-outline:hover {
+      background: var(--primary);
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    .section-title {
+      font-size: 2rem;
+      line-height: 1.2;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    .section-text {
+      color: var(--muted);
+      max-width: 760px;
+      margin-bottom: 28px;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .navbar {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    .logo img {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+      border-radius: 12px;
+      background: white;
+      padding: 4px;
+      box-shadow: var(--shadow);
+    }
+
+    nav ul {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    nav ul li a {
+      font-weight: 600;
+      color: var(--text);
+      transition: 0.3s ease;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: var(--secondary);
+    }
+
+    .hero {
+      padding: 60px 0 45px;
+      background: linear-gradient(135deg, #eef5ff 0%, #f7fbff 100%);
+    }
+
+    .hero-wrap {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .hero-tag {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: #ddeafb;
+      color: var(--primary);
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+      animation: fadeUp 0.6s ease;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 4vw, 4.2rem);
+      line-height: 1.06;
+      margin-bottom: 16px;
+      color: var(--primary);
+      max-width: 12ch;
+      animation: fadeUp 0.8s ease;
+    }
+
+    .hero p {
+      color: var(--muted);
+      margin-bottom: 22px;
+      max-width: 720px;
+      font-size: 1rem;
+      animation: fadeUp 1s ease;
+    }
+
+    .hero-btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 22px;
+      animation: fadeUp 1.2s ease;
+    }
+
+    .hero-points {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      animation: fadeUp 1.4s ease;
+    }
+
+    .hero-points span {
+      background: white;
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-size: 0.92rem;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    .hero-points span:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-card {
+      background: linear-gradient(145deg, #0b3d91, #1d72b8);
+      color: white;
+      border-radius: 24px;
+      padding: 24px;
+      box-shadow: 0 22px 45px rgba(11, 61, 145, 0.18);
+      animation: fadeLeft 1s ease;
+    }
+
+    .hero-card h3 {
+      font-size: 1.45rem;
+      margin-bottom: 14px;
+    }
+
+    .hero-card p {
+      color: rgba(255,255,255,0.86);
+      margin-bottom: 18px;
+      font-size: 0.98rem;
+    }
+
+    .info-list {
+      list-style: none;
+      display: grid;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .info-list li {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 14px;
+      padding: 12px 14px;
+      font-size: 0.95rem;
+      transition: 0.3s ease;
+    }
+
+    .info-list li:hover {
+      background: rgba(255,255,255,0.18);
+      transform: translateX(4px);
+    }
+
+    .mini-boxes {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .mini-box {
+      background: rgba(255,255,255,0.12);
+      border-radius: 14px;
+      padding: 14px 12px;
+      text-align: center;
+      transition: 0.3s ease;
+    }
+
+    .mini-box:hover {
+      transform: translateY(-4px);
+      background: rgba(255,255,255,0.18);
+    }
+
+    .mini-box strong {
+      display: block;
+      font-size: 1.1rem;
+      margin-bottom: 4px;
+    }
+
+    .mini-box span {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.82);
+    }
+
+    section {
+      padding: 56px 0;
+    }
+
+    .light-section {
+      background: #eef5fc;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+      align-items: stretch;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow);
+      transition: 0.35s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 35px rgba(11, 61, 145, 0.12);
+    }
+
+    .card h3 {
+      color: var(--primary);
+      margin-bottom: 10px;
+      font-size: 1.15rem;
+    }
+
+    .card p {
+      color: var(--muted);
+    }
+
+    .icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: var(--accent);
+      color: var(--primary);
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+
+    .highlight-box {
+      background: linear-gradient(135deg, #0c3f97, #145ea8);
+      color: white;
+      border-radius: 22px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+      transition: 0.35s ease;
+    }
+
+    .highlight-box:hover {
+      transform: translateY(-6px);
+    }
+
+    .highlight-box h3 {
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+    }
+
+    .highlight-box p {
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 14px;
+    }
+
+    .highlight-box ul {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+    }
+
+    .highlight-box ul li {
+      background: rgba(255,255,255,0.12);
+      padding: 11px 13px;
+      border-radius: 12px;
+    }
+
+    .cta-box {
+      background: linear-gradient(135deg, #e7f1ff, #f8fbff);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .cta-box h2 {
+      color: var(--primary);
+      font-size: 1.9rem;
+      margin-bottom: 10px;
+    }
+
+    .cta-box p {
+      color: var(--muted);
+      margin-bottom: 18px;
+      max-width: 700px;
+    }
+
+    footer {
+      background: #0b2742;
+      color: rgba(255,255,255,0.84);
+      padding: 24px 0;
+    }
+
+    .footer-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-wrap p {
+      font-size: 0.94rem;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(25px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeLeft {
+      from {
+        opacity: 0;
+        transform: translateX(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @media (max-width: 1100px) {
+      .hero-wrap,
+      .grid-2,
+      .grid-3 {
+        grid-template-columns: 1fr;
+      }
+
+      .mini-boxes {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 992px) {
+      .navbar {
+        flex-direction: column;
+        justify-content: center;
+        padding: 14px 0;
+      }
+
+      nav ul {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .hero {
+        padding: 42px 0 30px;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .section-title,
+      .cta-box h2 {
+        font-size: 1.65rem;
+      }
+
+      .btn {
+        width: 100%;
+        text-align: center;
+      }
+
+      .hero-btns {
+        flex-direction: column;
+      }
+
+      .card,
+      .hero-card,
+      .highlight-box,
+      .cta-box {
+        padding: 20px;
+      }
+
+      .logo img {
+        width: 42px;
+        height: 42px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="Sky Industries Logo" />
+        <span>Sky Industries</span>
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="infrastructure.html">Infrastructure</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-wrap">
+        <div>
+          <span class="hero-tag">About Sky Industries</span>
+          <h1>A dependable brand built around quality and practical utility.</h1>
+          <p>
+            Sky Industries is focused on manufacturing and supplying electrical products
+            that combine durable materials, modern design, and dependable performance
+            for everyday installation needs.
+          </p>
+
+          <div class="hero-btns">
+            <a href="products.html" class="btn btn-primary">Explore Products</a>
+            <a href="contact.html" class="btn btn-outline">Contact Us</a>
+          </div>
+
+          <div class="hero-points">
+            <span>Quality Driven</span>
+            <span>Supply Focused</span>
+            <span>Installation Ready</span>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <h3>What defines us</h3>
+          <p>
+            We aim to serve the market with electrical products that support clean finishing,
+            reliable usage, and strong trust for dealers, contractors, and project buyers.
+          </p>
+
+          <ul class="info-list">
+            <li>Focused on practical product categories for daily electrical applications.</li>
+            <li>Committed to dependable quality, durability, and product usability.</li>
+            <li>Aligned for business supply discussions and requirement-based support.</li>
+          </ul>
+
+          <div class="mini-boxes">
+            <div class="mini-box">
+              <strong>Trust</strong>
+              <span>Business value</span>
+            </div>
+            <div class="mini-box">
+              <strong>Quality</strong>
+              <span>Reliable standards</span>
+            </div>
+            <div class="mini-box">
+              <strong>Support</strong>
+              <span>Supply focused</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container grid-2">
+        <div>
+          <h2 class="section-title">Who We Are</h2>
+          <p class="section-text">
+            Sky Industries represents a practical and forward-looking approach to electrical
+            product manufacturing and supply, with emphasis on usability, finish, and dependable performance.
+          </p>
+
+          <div class="card">
+            <h3>Our approach</h3>
+            <p>
+              We focus on creating and supplying products that support neat installation,
+              durable service life, and confidence for businesses working across residential,
+              commercial, and infrastructure-related applications.
+            </p>
+          </div>
+        </div>
+
+        <div class="highlight-box">
+          <h3>What we stand for</h3>
+          <p>
+            Our business direction is shaped by the essentials that matter in product-led industries.
+          </p>
+          <ul>
+            <li>Reliable quality across electrical product categories.</li>
+            <li>Durable solutions built for regular installation use.</li>
+            <li>Professional finishing with practical usability.</li>
+            <li>Strong business trust through supply support.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="light-section">
+      <div class="container">
+        <h2 class="section-title">Our Core Values</h2>
+        <p class="section-text">
+          Our work is guided by consistent product thinking, reliable delivery intent,
+          and a clear understanding of practical market needs.
+        </p>
+
+        <div class="grid-3">
+          <div class="card">
+            <div class="icon">01</div>
+            <h3>Quality First</h3>
+            <p>
+              We prioritize product quality and finish so users and businesses can trust
+              performance in everyday usage.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="icon">02</div>
+            <h3>Practical Innovation</h3>
+            <p>
+              We value product thinking that improves neatness, usability, and overall installation efficiency.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="icon">03</div>
+            <h3>Business Trust</h3>
+            <p>
+              We believe lasting relationships are built through dependable supply and responsible support.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container grid-2">
+        <div class="card">
+          <h2 class="section-title">Vision</h2>
+          <p>
+            To become a trusted name in modern electrical solutions known for reliability,
+            utility, and consistent value in the market.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2 class="section-title">Mission</h2>
+          <p>
+            To deliver quality-driven products with a responsive supply mindset and a strong focus
+            on practical applications and dependable service.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="light-section">
+      <div class="container">
+        <h2 class="section-title">Why Businesses Connect With Us</h2>
+        <p class="section-text">
+          Our positioning is built around practical strengths that support both market confidence
+          and project-level product requirements.
+        </p>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>Product-focused thinking</h3>
+            <p>
+              Every category is approached with attention to usability, finish, and day-to-day installation value.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Dependable category range</h3>
+            <p>
+              Our range supports common electrical needs through products that are relevant and business-ready.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Requirement-based support</h3>
+            <p>
+              Discussions can be aligned around product needs, supply intent, and future business association.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="cta-box">
+          <h2>Let’s build a strong business connection.</h2>
+          <p>
+            Reach out for company discussions, product information, dealership interest,
+            or requirement-based supply conversations.
+          </p>
+          <a href="contact.html" class="btn btn-primary">Go to Contact Page</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <p>© 2026 Sky Industries. All rights reserved.</p>
+      <p>Trusted electrical products with a focus on quality, durability, and dependable supply.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
